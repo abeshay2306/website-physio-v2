@@ -1,7 +1,12 @@
 # website-physio-v2
 
-Minimalistische Website für eine Praxis für Physiotherapie.
-Enthält eine responsive Startseite mit Kontaktformular und eine Dankeseite nach dem Absenden. Das Hero-Bild liegt lokal unter `img/hero.svg` und wird im HTML lazy geladen.
+Minimalistische Website für eine Praxis für Physiotherapie.  
+Enthält eine responsive Startseite mit Kontaktformular und eine Dankeseite nach dem Absenden.  
+Das Hero-Bild liegt lokal unter `img/hero.svg` und wird im HTML lazy geladen.
+
+## Meta-Tags
+
+Alle Seiten enthalten Meta-Tags für `title`, `description` und `keywords`, damit Suchmaschinen die Inhalte besser einordnen können.
 
 ## 📦 Projektstruktur
 
@@ -37,4 +42,3 @@ npx stylelint "**/*.css"
 npx htmlhint "**/*.html"
 npx eslint "**/*.js"   # nutzt die Flat Config aus eslint.config.js
 npx lhci autorun
-```
