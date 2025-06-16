@@ -2,7 +2,7 @@
 
 Minimalistische Website für eine Praxis für Physiotherapie.  
 Enthält eine responsive Startseite mit Kontaktformular und eine Dankeseite nach dem Absenden.  
-Eine Skip-Link-Navigation erleichtert die Bedienung mit Tastatur.
+Eine Skip-Link-Navigation erleichtert die Bedienung mit Tastatur. Das Hero-Bild liegt lokal unter `img/hero.svg` und wird im HTML lazy geladen.
 
 ## 📦 Projektstruktur
 
@@ -21,7 +21,6 @@ website-physio-v2/
 ├── package.json
 ├── .gitignore
 └── README.md
-
 🛠️ Entwicklung
 Qualitätsprüfungen können mit den folgenden Tools ausgeführt werden (Benötigt Node.js).
 Nach dem Klonen einmalig die Abhängigkeiten installieren:
@@ -38,4 +37,4 @@ Edit
 npx stylelint "**/*.css"
 npx htmlhint "**/*.html"
 npx eslint "**/*.js"   # nutzt die Flat Config aus eslint.config.js
-npx lhci autorun
+npx lhci autorun       # führt Lighthouse CI aus (erfordert ggf. Internetzugriff)

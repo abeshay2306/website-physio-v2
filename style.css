@@ -11,6 +11,24 @@ body {
   background-color: #fff;
 }
 
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  z-index: 100;
+}
+
 header {
   background-color: #f5f5f5;
   padding: 1rem;
