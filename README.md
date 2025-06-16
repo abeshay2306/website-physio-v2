@@ -37,3 +37,4 @@ npx stylelint "**/*.css"
 npx htmlhint "**/*.html"
 npx eslint "**/*.js"   # nutzt die Flat Config aus eslint.config.js
 npx lhci autorun
+```
