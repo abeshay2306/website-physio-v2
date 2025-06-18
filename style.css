@@ -134,6 +134,7 @@ footer {
 }
 
 @media (width >= 600px) {
+
   nav ul {
     justify-content: flex-end;
   }
