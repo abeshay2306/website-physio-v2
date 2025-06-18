@@ -3,9 +3,9 @@
   --color-primary: #4B2A73;
   --color-secondary: #D9B750;
   --color-accent: #F2C94C;
-  --color-bg: #FFFFFF;
-  --color-text: #333333;
-  --color-white: #FFFFFF;
+  --color-bg: #FFF;
+  --color-text: #333;
+  --color-white: #FFF;
 }
 
 /* === Basis-Reset === */
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -31,6 +31,7 @@ body {
   height: 1px;
   overflow: hidden;
 }
+
 .skip-link:focus {
   left: 0;
   width: auto;
@@ -132,7 +133,8 @@ footer {
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
+
   nav ul {
     justify-content: flex-end;
   }

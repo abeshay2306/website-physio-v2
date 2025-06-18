@@ -1,7 +1,8 @@
 # website-physio-v2
 
-Minimalistische Website für eine Praxis für Physiotherapie.  
-Enthält eine responsive Startseite mit Kontaktformular und eine Dankeseite nach dem Absenden.  
+Minimalistische Website für eine Praxis für Physiotherapie.
+Enthält eine responsive Startseite mit Kontaktformular und eine Dankeseite nach dem Absenden.
+
 Das Hero-Bild liegt lokal unter `img/hero.svg` und wird im HTML lazy geladen.
 
 ## Meta-Tags
