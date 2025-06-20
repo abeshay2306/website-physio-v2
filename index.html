@@ -1,73 +1,266 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index,follow">
-  <title>Praxis für Physiotherapie</title>
-  <meta name="description" content="Moderne Physiotherapie und Rehabilitation">
-  <meta name="keywords" content="Physiotherapie, Rehabilitation, Massage">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ SEO: Titel & Beschreibung -->
+  <title>Physio Synergie – Ganzheitliche Physiotherapie in Graz</title>
+  <meta name="description" content="Physio Synergie bietet ganzheitliche Physiotherapie in Graz – mit Erfahrung, Herz und medizinischer Kompetenz. Individuelle Behandlungen für nachhaltige Gesundheit." />
+
+  <!-- ✅ Canonical URL -->
+  <link rel="canonical" href="https://www.physiosynergie.at/" />
+
+  <!-- ✅ Open Graph für Social Media -->
+  <meta property="og:title" content="Physio Synergie – Ganzheitliche Physiotherapie in Graz" />
+  <meta property="og:description" content="Schmerzfrei leben. Gesund bewegen. Vertrauen Sie auf über 25 Jahre Erfahrung in ganzheitlicher Physiotherapie." />
+  <meta property="og:image" content="https://www.physiosynergie.at/img/social-preview.jpg" />
+  <meta property="og:url" content="https://www.physiosynergie.at/" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Physio Synergie – Ganzheitliche Physiotherapie in Graz" />
+  <meta name="twitter:description" content="Individuelle Behandlungen. Schulmedizin und Heilmethoden vereint. Für nachhaltige Gesundheit und Wohlbefinden." />
+  <meta name="twitter:image" content="https://www.physiosynergie.at/img/social-preview.jpg" />
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!-- ✅ Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Strukturierte Daten (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Physio Synergie",
+    "description": "Ganzheitliche Physiotherapie mit medizinischer Kompetenz, Herz und Erfahrung – im Medcenter Nord, Graz.",
+    "url": "https://www.physiosynergie.at",
+    "image": "https://www.physiosynergie.at/img/social-preview.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Fischeraustraße 13/1",
+      "addressLocality": "Graz",
+      "postalCode": "1210",
+      "addressCountry": "AT"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+43 681 20520482",
+      "contactType": "Customer Service"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Zum Inhalt springen</a>
-  <header>
-    <h1>Praxis für Physiotherapie</h1>
-    <nav aria-label="Hauptnavigation">
-      <ul>
-        <li><a href="#leistungen">Leistungen</a></li>
-        <li><a href="#praxis">Praxis</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+  
 
-  <main id="main">
+  <!-- Sticky CTA für mobile -->
+  <div id="mobile-cta-container"></div>
 
-  <section id="hero">
-    <h2>Bewegen Sie sich wieder frei</h2>
-    <p>Wir unterstützen Sie bei Genesung und Prävention.</p>
-    <img src="img/hero.svg" alt="Illustration einer physiotherapeutischen Behandlung" width="600" height="300" loading="lazy">
-  </section>
+  <!-- Navigation -->
+  <header class="header">
+  <div class="container nav-container relative">
+    <div class="floating-logo">
+      <img src="img/Logo-Physiosynergie.jpg" alt="" />
+    </div>
+    
+    
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="img/Logo-Physiosynergie.jpeg" alt="" class="logo-img" />
+      </a>
+      <nav class="nav">
+        <a href="#leistungen" class="nav-btn">Leistungen</a>
+        <a href="#praxis" class="nav-btn">Praxis</a>
+        <a href="#kontakt" class="nav-btn">Kontakt</a>
+      </nav>
+    </div>
+    </div>
+</header>
 
-  <section id="leistungen">
-    <h2>Unsere Leistungen</h2>
-    <article>
-      <h3>Krankengymnastik</h3>
-      <p>Individuelle Therapiepläne für Schmerzen und Bewegungseinschränkungen.</p>
-    </article>
-    <article>
-      <h3>Massage</h3>
-      <p>Gezielte Anwendungen zur Entspannung und Regeneration.</p>
-    </article>
-  </section>
+  <section class="hero hidden">
+  <div class="container">
+    <h1>Therapie, die mehr berührt.</h1>
+    <p>Bei Physio Synergie vereinen sich medizinische Erfahrung, ganzheitliches Denken und menschliche Nähe – für spürbare Gesundheit auf allen Ebenen.</p>
+    <a href="#kontakt" class="btn-primary">Jetzt Termin vereinbaren</a>
+  </div>
+</section>
+  <section class="section" id="leistungen">
+  <div class="container">
+    <h2>Unsere Therapieangebote</h2>
+    <div class="services">
 
-  <section id="praxis">
-    <h2>Unsere Praxis</h2>
-    <p>Modern ausgestattete Räumlichkeiten im Herzen der Stadt.</p>
-  </section>
-
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <form action="Danke.html" method="post" aria-label="Kontaktformular">
-      <div class="honeypot" aria-hidden="true">
-        <label for="website">Website</label>
-        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      <div class="card" data-description="Gezielte Techniken zur Linderung von Verspannungen und Stress – für mehr Leichtigkeit im Alltag.">
+        <span class="card-title">Schmerztherapie & Entspannung</span>
+        <span class="card-desc">Gezielte Techniken zur Linderung von Verspannungen und Stress – für mehr Leichtigkeit im Alltag.</span>
       </div>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required autocomplete="name">
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" name="email" required autocomplete="email">
-      <label for="message">Nachricht</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      <button type="submit">Senden</button>
-    </form>
-  </section>
-  </main>
 
-  <footer>
-    <p>&copy; <span data-current-year>2025</span> Praxis für Physiotherapie</p>
+      <div class="card" data-description="Für mehr Mobilität, Stabilität und Sicherheit im Alltag – unabhängig vom Alter.">
+        <span class="card-title">Bewegungstherapie</span>
+        <span class="card-desc">Für mehr Mobilität, Stabilität und Sicherheit im Alltag – unabhängig vom Alter.</span>
+      </div>
+
+      <div class="card" data-description="Sanfte manuelle Technik zur Entstauung – unterstützt das Immunsystem, besonders nach Operationen.">
+        <span class="card-title">Lymphdrainage</span>
+        <span class="card-desc">Sanfte manuelle Technik zur Entstauung – unterstützt das Immunsystem, besonders nach Operationen.</span>
+      </div>
+
+      <div class="card" data-description="Therapeutische Begleitung vor und nach Operationen – für optimale Regeneration und Prävention.">
+        <span class="card-title">Pre- & Postoperative Therapie</span>
+        <span class="card-desc">Therapeutische Begleitung vor und nach Operationen – für optimale Regeneration und Prävention.</span>
+      </div>
+
+      <div class="card" data-description="Gezieltes Training für eine stabile Körpermitte – in jeder Lebensphase, für Frauen und Männer.">
+        <span class="card-title">Beckenbodentraining</span>
+        <span class="card-desc">Gezieltes Training für eine stabile Körpermitte – in jeder Lebensphase, für Frauen und Männer.</span>
+      </div>
+
+      <div class="card" data-description="Tiefenwirksame Techniken zur Lösung von Schmerzen und Verspannungen im Bindegewebe.">
+        <span class="card-title">Faszien- & Triggerpunkttherapie</span>
+        <span class="card-desc">Tiefenwirksame Techniken zur Lösung von Schmerzen und Verspannungen im Bindegewebe.</span>
+      </div>
+
+      <div class="card" data-description="Gezielte manuelle Griffe zur Behandlung von Gelenk- und Bewegungseinschränkungen.">
+        <span class="card-title">Manuelle Therapie</span>
+        <span class="card-desc">Gezielte manuelle Griffe zur Behandlung von Gelenk- und Bewegungseinschränkungen.</span>
+      </div>
+
+      <div class="card" data-description="Haltungsanalyse und gezielte Übungen für Kinder, Jugendliche und Erwachsene.">
+        <span class="card-title">Haltung & Wirbelsäulenstabilität</span>
+        <span class="card-desc">Haltungsanalyse und gezielte Übungen für Kinder, Jugendliche und Erwachsene.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section class="praxis" id="praxis">
+  <div class="container">
+    <h2>Über unsere Praxis</h2>
+    <p><strong>Physio Synergie</strong> steht für eine Therapieform, die den ganzen Menschen sieht. Unsere Arbeit verbindet schulmedizinisches Fachwissen mit wirkungsvollen Heilmethoden – immer individuell auf Ihre Situation abgestimmt.</p>
+
+    <p><strong>Florina Frunza BSc</strong> ist staatlich anerkannte Physiotherapeutin mit über 25 Jahren Erfahrung. Als Mutter zweier Kinder bringt sie nicht nur medizinische Kompetenz, sondern auch viel Menschlichkeit, Geduld und Einfühlungsvermögen mit in jede Behandlung ein. Sie lebt seit über einem Jahrzehnt in Österreich und betreut Patient:innen in mehreren Sprachen – Deutsch, Rumänisch, Italienisch und Englisch.</p>
+
+    <p>Ihr Ansatz ist ganzheitlich: Körper, Geist und Seele bilden für sie eine untrennbare Einheit. Beschwerden werden nicht nur auf physischer Ebene betrachtet, sondern im gesamten Lebenskontext verstanden und behandelt. Das Ziel: nachhaltige Gesundheit, die sich spürbar im Alltag zeigt.</p>
+
+    <p>Unsere Praxis befindet sich im <strong>Medcenter Nord, Fischeraustraße 13/1, 8051 Graz</strong>. Termine sind mit und ohne ärztliche Überweisung möglich – auch Hausbesuche bieten wir gerne an.</p>
+  </div>
+</section>
+  <section class="cta">
+  <div class="container">
+    <h2>Individuelle Behandlungen. Ganzheitliche Wirkung. Persönliche Betreuung.</h2>
+    <p>Ob akute Beschwerden, chronische Schmerzen oder der Wunsch nach langfristigem Wohlbefinden – bei uns sind Sie in guten Händen.</p>
+    <div style="margin-top: 2rem;">
+      <a href="#kontakt" class="btn-primary">Mehr erfahren</a>
+    </div>
+  </div>
+</section>
+  <section class="section" id="faq">
+  <div class="container">
+    <h2>Häufige Fragen (FAQ)</h2>
+
+    <div class="faq-item">
+      <h3>Was ist Lymphdrainage und wann hilft sie?</h3>
+      <p>Lymphdrainage ist eine sanfte manuelle Technik, die das Lymphsystem anregt. Sie hilft besonders bei Schwellungen nach Operationen oder bei Lymphstauungen, z. B. nach Krebsbehandlungen.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Wie läuft die erste Physiotherapie-Einheit ab?</h3>
+      <p>Beim ersten Termin erfolgt eine genaue Anamnese und Befunderhebung. Danach wird gemeinsam ein individueller Therapieplan erstellt – abgestimmt auf Ihre Beschwerden und Ziele.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Benötige ich eine ärztliche Überweisung?</h3>
+      <p>Für Kassenabrechnungen benötigen Sie eine ärztliche Überweisung. Privatleistungen können auch ohne Überweisung in Anspruch genommen werden.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Wer kann zur Therapie kommen?</h3>
+      <p>Unsere Praxis steht allen offen – Kinder, Jugendliche, Erwachsene und Senioren. Auch Hausbesuche in Graz sind nach Absprache möglich.</p>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist Lymphdrainage und wann hilft sie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lymphdrainage ist eine sanfte manuelle Technik, die das Lymphsystem anregt. Sie hilft besonders bei Schwellungen nach Operationen oder bei Lymphstauungen, z. B. nach Krebsbehandlungen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie läuft die erste Physiotherapie-Einheit ab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beim ersten Termin erfolgt eine genaue Anamnese und Befunderhebung. Danach wird gemeinsam ein individueller Therapieplan erstellt – abgestimmt auf Ihre Beschwerden und Ziele."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Benötige ich eine ärztliche Überweisung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Für Kassenabrechnungen benötigen Sie eine ärztliche Überweisung. Privatleistungen können auch ohne Überweisung in Anspruch genommen werden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wer kann zur Therapie kommen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unsere Praxis steht allen offen – Kinder, Jugendliche, Erwachsene und Senioren. Auch Hausbesuche in Graz sind nach Absprache möglich."
+      }
+    }
+  ]
+}
+</script>
+  <section class="kontakt" id="kontakt">
+  <div class="container">
+    <h2>Kontakt & Terminvereinbarung</h2>
+    <p>Wir freuen uns darauf, Sie persönlich kennenzulernen. Rufen Sie uns an oder schreiben Sie uns – wir melden uns zuverlässig bei Ihnen zurück.</p>
+
+    <p>
+      <strong>Telefon:</strong> <a href="tel:+4368120520482">+43 681 205 20482</a><br>
+      <strong>E-Mail:</strong> <a href="mailto:physiosynergie10@gmail.com">physiosynergie10@gmail.com</a><br>
+      <strong>Adresse:</strong> Fischeraustraße 13/1, 8051 Graz<br>
+      <strong>Öffnungszeiten:</strong> Montag–Freitag, 08:00–18:00 Uhr
+    </p>
+
+    <form action="https://formspree.io/f/mwpbljvy" method="POST">
+      <input type="text" name="name" placeholder="Ihr Name" required />
+      <input type="email" name="email" placeholder="Ihre E-Mail" required />
+      <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+      <button type="submit">Absenden</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Physio Synergie – Florina Frunza BSc |
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+      </p>
+    </div>
   </footer>
-  <script src="script.js" defer></script>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
