@@ -1,0 +1,22 @@
+
+.legal-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  background: #f6f8fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  color: #2e2e2e;
+  line-height: 1.7;
+  font-family: sans-serif;
+}
+
+.legal-container h1, .legal-container h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.legal-container p {
+  margin-bottom: 1rem;
+}
