@@ -1,0 +1,55 @@
+
+.card {
+  border-radius: 20px;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-desc {
+  font-size: 1rem;
+}
+
+/* Farbzuordnung */
+.card.bewegungstherapie { background-color: rgba(152, 251, 152, 0.2); }
+.card.lymphdrainage { background-color: rgba(230, 230, 250, 0.2); }
+.card.schmerztherapie { background-color: rgba(173, 216, 230, 0.2); }
+.card.prepostoperativ { background-color: rgba(255, 182, 193, 0.2); }
+.card.beckenboden { background-color: rgba(245, 245, 220, 0.2); }
+.card.faszien { background-color: rgba(211, 211, 211, 0.2); }
+.card.manuell { background-color: rgba(135, 206, 235, 0.2); }
+.card.haltung { background-color: rgba(255, 215, 0, 0.2); }
+
+/* Hover-Effekt mit 3D-Look + sanftem Farbwechsel */
+.card:hover {
+  background-color: #f6f8fa;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Active-Feedback */
+.card:active {
+  transform: translateY(-3px) scale(0.99);
+}
+
+/* Focus-Ring für Accessibility */
+.card:focus-within {
+  outline: 2px dashed var(--accent);
+  outline-offset: 4px;
+}
+
+/* Spacing unter Card-Section */
+#leistungen,
+.services {
+  margin-bottom: 3rem;
+}
